@@ -13,7 +13,7 @@
 }
 body {
     background-image: linear-gradient(var(--clr-tertiary), #2c76d0, #5491db);
-    height: 100vh;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

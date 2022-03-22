@@ -13,7 +13,7 @@
 }
 body {
     background-image: linear-gradient(var(--clr-tertiary), #2c76d0, #5491db);
-    height: 100vh;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -103,7 +103,7 @@ button {
     background-color: var(--clr-primary);
     display: flex;
     flex-direction: column;
-    flex-grow: 2;
+    flex-grow: 3;
     height: 100%;
     grid-row: 1 / 4;
     align-items: center;

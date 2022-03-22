@@ -13,8 +13,7 @@
 }
 body {
     background-image: linear-gradient(var(--clr-tertiary), #2c76d0, #5491db);
-    height: 100vh;
-    background-position: center;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -71,6 +70,8 @@ input {
     background: #f2f2f2;
     padding: 12px;
     border-radius: 3px;
+    width: 125px;
+    height: 40px;
     outline: none;
     font-size: 14px;
 }

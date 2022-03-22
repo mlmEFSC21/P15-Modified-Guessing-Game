@@ -51,16 +51,14 @@ function countGuesses() {
     let numOfGuesses = guesses.length;
     if (numOfGuesses < 10) {
         winningMessage.innerText = `${numOfGuesses} guesses?! Either you know the secret or you got lucky!`;
-        guessesContainer.append(winningMessage);
     } else if (numOfGuesses == 10) {
         winningMessage.innerText = `${numOfGuesses} guesses. Ahah! You know the secret!`;
-        guessesContainer.append(winningMessage);
     } else if (numOfGuesses > 10) {
         winningMessage.innerText = `Yikes! ${numOfGuesses} guesses... You should be able to do better!`;
-        hint.innerHTML = '*Hint* Knowing the trick is <span class="hint">half</span> the battle.';
-        guessesContainer.append(winningMessage);
-        guessesContainer.append(hint);
+        hint.innerText = "*Hint* Knowing the trick is half the battle.";
     }
+    guessesContainer.append(winningMessage);
+    guessesContainer.append(hint);
 }
 // creates a new random number for replay
 function newRNG() {

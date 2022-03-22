@@ -13,8 +13,7 @@
 }
 body {
     background-image: linear-gradient(var(--clr-tertiary), #2c76d0, #5491db);
-    height: 100vh;
-    background-position: center;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -27,7 +26,7 @@ body {
     background-color: var(--clr-secondary);
     display: grid;
     max-width: 960px;
-    height: 75vh;
+    /* height: 75vh; */
     margin: 10px auto;
     padding: 20px;
     grid-template-columns: repeat(3, 1fr);
@@ -71,6 +70,8 @@ input {
     background: #f2f2f2;
     padding: 12px;
     border-radius: 3px;
+    width: 125px;
+    height: 40px;
     outline: none;
     font-size: 14px;
 }

@@ -57,7 +57,7 @@ function countGuesses() {
         guessesContainer.append(winningMessage);
     } else if (numOfGuesses > 10) {
         winningMessage.innerText = `Yikes! ${numOfGuesses} guesses... You should be able to do better!`;
-        hint.innerHTML = '*Hint* Knowing the trick is <span class="hint">half</span> the battle.';
+        hint.innerHTML = "*Hint* Knowing the trick is <em>half</em> the battle.";
         guessesContainer.append(winningMessage);
         guessesContainer.append(hint);
     }

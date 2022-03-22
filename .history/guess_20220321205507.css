@@ -12,11 +12,7 @@
     padding: 0;
 }
 body {
-    background-image: linear-gradient(var(--clr-tertiary), #2c76d0, #5491db);
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: var(--clr-tertiary);
     color: white;
     font-size: 20px;
 }
@@ -47,7 +43,6 @@ body {
     height: 100%;
     justify-content: center;
     align-items: center;
-    text-align: center;
     overflow: hidden;
 }
 input,
@@ -60,7 +55,6 @@ button {
 }
 label {
     margin-right: 15px;
-    margin-block: 10px;
 }
 input {
     border: none;
@@ -71,6 +65,8 @@ input {
     background: #f2f2f2;
     padding: 12px;
     border-radius: 3px;
+    width: 125px;
+    height: 40px;
     outline: none;
     font-size: 14px;
 }
@@ -113,8 +109,4 @@ button {
 h3 {
     margin: 10px;
     text-align: center;
-}
-.hint {
-    font-style: italic;
-    text-decoration: underline;
 }

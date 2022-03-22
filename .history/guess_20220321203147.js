@@ -9,8 +9,7 @@ const p = document.createElement("p");
 const ul = document.getElementById("guessList");
 const li = document.createElement("li");
 const guessesContainer = document.getElementById("guessesContainer");
-const winningMessage = document.createElement("h3");
-const hint = document.createElement("h3");
+const h3 = document.createElement("h3");
 
 //checks to see if the guess is higher, lower, or equal to
 function checkGuess() {
@@ -49,18 +48,8 @@ function trackGuesses() {
 //counts how many guesses. Uses array length.
 function countGuesses() {
     let numOfGuesses = guesses.length;
-    if (numOfGuesses < 10) {
-        winningMessage.innerText = `${numOfGuesses} guesses?! Either you know the secret or you got lucky!`;
-        guessesContainer.append(winningMessage);
-    } else if (numOfGuesses == 10) {
-        winningMessage.innerText = `${numOfGuesses} guesses. Ahah! You know the secret!`;
-        guessesContainer.append(winningMessage);
-    } else if (numOfGuesses > 10) {
-        winningMessage.innerText = `Yikes! ${numOfGuesses} guesses... You should be able to do better!`;
-        hint.innerHTML = '*Hint* Knowing the trick is <span class="hint">half</span> the battle.';
-        guessesContainer.append(winningMessage);
-        guessesContainer.append(hint);
-    }
+    h3.innerText = `It took you ${numOfGuesses} guesses!`;
+    guessesContainer.append(h3);
 }
 // creates a new random number for replay
 function newRNG() {
@@ -73,7 +62,7 @@ function resetGame() {
     while (ul.hasChildNodes()) {
         ul.removeChild(ul.firstChild);
     }
-    winningMessage.remove();
+    h3.remove();
     guesses = [];
     newRNG();
     //logging random number for debugging.
