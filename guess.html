@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="guess.css" />
+        <script src="guess.js" defer></script>
+        <title>Guessing Game</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="pageTitle">Guess The Number!</h1>
+        </header>
+        <section>
+            <div class="gameContainer" id="container">
+                <div class="results" id="results">
+                    <form action="#" class="inputForm">
+                        <label for="guessInput">Pick a number 1 - 1000</label>
+                        <input
+                            type="text"
+                            required
+                            name="guessInput"
+                            class="guessInput"
+                            id="guessInput"
+                        />
+                        <input type="button" class="submitBtn" id="submitBtn" value="Submit" />
+                        <label for="resetBtn">Click to completely reset and play again!</label>
+                        <button type="reset" class="resetBtn" id="resetBtn" name="Reset">
+                            Reset
+                        </button>
+                    </form>
+                </div>
+                <div class="guessesContainer" id="guessesContainer">
+                    <h2>Previous Guesses</h2>
+                    <ul class="guesses" id="guessList"></ul>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
