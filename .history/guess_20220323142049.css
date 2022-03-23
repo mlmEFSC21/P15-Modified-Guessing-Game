@@ -36,7 +36,7 @@ body {
     align-items: center;
     justify-content: center;
     border: groove;
-    box-shadow: 3px 3px 10px 3px black;
+    box-shadow: 13px 13px 10px 5px black;
 }
 .results {
     background-color: var(--clr-primary);

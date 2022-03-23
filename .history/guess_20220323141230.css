@@ -35,8 +35,6 @@ body {
     gap: 10px;
     align-items: center;
     justify-content: center;
-    border: groove;
-    box-shadow: 3px 3px 10px 3px black;
 }
 .results {
     background-color: var(--clr-primary);
@@ -88,7 +86,6 @@ button {
 }
 h2 {
     text-decoration: underline;
-    text-decoration-color: #f3f3f3;
 }
 .submitBtn {
     background: var(--clr-secondary);
