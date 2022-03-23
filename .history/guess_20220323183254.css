@@ -1,0 +1,134 @@
+:root {
+    --clr-primary: #218bc6;
+    --clr-secondary: #48a9e0;
+    --clr-tertiary: #235ea6;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(var(--clr-tertiary), #2c76d0, #5491db);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 20px;
+}
+.pageTitle {
+    text-align: center;
+}
+.gameContainer {
+    background-color: var(--clr-secondary);
+    display: grid;
+    max-width: 960px;
+    height: 75vh;
+    margin: 10px auto;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    border: groove;
+    box-shadow: 3px 3px 10px 3px black;
+}
+.results {
+    background-color: var(--clr-primary);
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 10px auto;
+    padding: 0 25px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+input,
+button {
+    margin: 10px 0;
+}
+.inputForm {
+    display: flex;
+    flex-wrap: wrap;
+}
+label {
+    margin-right: 15px;
+    margin: 10px 0;
+}
+input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    outline: none;
+    font-size: 14px;
+}
+img {
+    width: 450px;
+    height: 300px;
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+    align-self: center;
+    justify-self: center;
+}
+button {
+    border: solid 1px white;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 3px;
+    width: 125px;
+    height: 40px;
+    outline: none;
+    font-size: 14px;
+}
+h2 {
+    text-decoration: underline;
+    text-decoration-color: #f3f3f3;
+}
+.submitBtn {
+    background: var(--clr-secondary);
+    border: solid 0.5px navy;
+    margin-left: 15px;
+}
+.submitBtn:hover {
+    background: #44b3db;
+}
+.resetBtn {
+    background: darkred;
+    color: white;
+}
+.resetBtn:hover {
+    background: red;
+}
+.guessesContainer {
+    background-color: var(--clr-primary);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    height: 100%;
+    grid-row: 1 / 5;
+    align-items: center;
+    overflow: hidden;
+}
+/* the h3 that is appended by the js. It was hugging the container too much. */
+h3 {
+    margin: 10px;
+    text-align: center;
+}
+.hint {
+    font-style: italic;
+    text-decoration: underline;
+}

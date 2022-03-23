@@ -31,8 +31,8 @@ body {
     margin: 10px auto;
     padding: 20px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
     align-items: center;
     justify-content: center;
     border: groove;
@@ -54,7 +54,8 @@ body {
 }
 input,
 button {
-    margin-block: 10px;
+    margin: 10px 0;
+    margin-left: 10px;
 }
 .inputForm {
     display: flex;
@@ -62,7 +63,7 @@ button {
 }
 label {
     margin-right: 15px;
-    margin-block: 10px;
+    margin: 10px 0;
 }
 input {
     border: none;
@@ -76,12 +77,20 @@ input {
     outline: none;
     font-size: 14px;
 }
+img {
+    width: 600px;
+    height: 400px;
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+    align-self: center;
+    justify-self: center;
+}
 button {
     border: solid 1px white;
     margin-bottom: 10px;
     padding: 12px;
     border-radius: 3px;
-    width: 125px;
+    width: 75px;
     height: 40px;
     outline: none;
     font-size: 14px;
@@ -94,6 +103,8 @@ h2 {
     background: var(--clr-secondary);
     border: solid 0.5px navy;
     margin-left: 15px;
+    width: 75px;
+    font-weight: bold;
 }
 .submitBtn:hover {
     background: #44b3db;
@@ -101,6 +112,7 @@ h2 {
 .resetBtn {
     background: darkred;
     color: white;
+    font-weight: bold;
 }
 .resetBtn:hover {
     background: red;
@@ -111,7 +123,7 @@ h2 {
     flex-direction: column;
     flex-grow: 2;
     height: 100%;
-    grid-row: 1 / 4;
+    grid-row: 1 / 5;
     align-items: center;
     overflow: hidden;
 }
